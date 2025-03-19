@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GypsiGram</title>
+</head>
+<body>
+    <header><h1>GypsiGram</h1></header>
+
+    <nav>
+        <ul class="navegacion">
+            <div class="menu">
+                <li class="menus"><a href="../index.html">Inicio</a></li>
+                <li class="menus"><a href="registroInstituto.html"> Registro para Institutos</a></li>
+                <li class="menus"><a href="registroEstudiantes.html"> Registro para Estudiantes</a></li>
+                <li class="menus"><a href=""> Registro.....</a></li>
+            </div>
+        </ul>
+    </nav>
+
+
+    <fieldset>
+        <legend>Registro instituto</legend>
+        <form action="" method="post">
+            <div>
+                <label for="name"> Nombre del instituto*: </label>
+                <input type="text" name="Nombre" placeholder="Escribe el nombre del centro aqui" required />
+            </div>
+            <div>
+                <label for="locate"> Localización*: </label>
+                <input type="text" name="Dirección"
+                    placeholder="Escribe la dirección aquí, incluyendo ciudad, provincia y codigo postal" required />
+            </div>
+
+            <div>
+                <label for="teléfono">Número de teléfono de contacto*: </label>
+                <input type="text" name="teléfono" placeholder="Escribe el número de teléfono aquí" required>
+            </div>
+            <div>
+                <label for="email">Email de contacto*: </label>
+                <input type="email" name="Correo" placeholder="Escribe tu correo aqui" required />
+            </div>
+
+            <div>
+                <label for="text"> Ciclos Formativos que posee*: </label>
+                <textarea name="Descripción" required> </textarea>
+            </div>
+            <div>
+                <label for="website"> Página web del Centro: </label>
+                <input type="url" name="website" />
+            </div>
+            <div>
+                <label for="text"> Descripción del instituto: </label>
+                <textarea name="Descripción"> </textarea>
+            </div>
+            <div id="botones">
+                <input type="submit" value="Enviar incidencia" id="Enviar">
+
+                <input type="reset" value="Borrar Formulario" id="Borrar">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
