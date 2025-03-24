@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <header><h1>GypsiGram</h1></header>
+    <header>
+        <h1>GypsiGram</h1>
+    </header>
 
     <nav>
         <ul class="navegacion">
             <div class="menu">
                 <li class="menus"><a href="../index.html">Inicio</a></li>
-                <li class="menus"><a href="registroInstituto.html"> Registro para institutos</a></li>
-                <li class="menus"><a href="registroEstudiantes.html"> Registro para Estudiantes</a></li>
-                <li class="menus"><a href=""> Registro.....</a></li>
+                <li class="menus"><a href="registroInstituto.html"> Registro para Institutos</a></li>
+                <li class="menus"><a href="registroEmpresas.html"> Registro para Empresas</a></li>
             </div>
         </ul>
     </nav>
@@ -27,15 +30,98 @@
                 <label for="name"> Nombre completo*: </label>
                 <input type="text" name="Nombre" placeholder="Escribe el nombre con apellidos aqui" required />
             </div>
-            <div id="margin">
-                <label for="file"> Imagen de la incidencia (opcional):</label>
+
+            <div>
+                <label for="file"> Imagen de perfil</label>
             </div>
-            <div id="margin">
-                <input type="file" name="Imagen"> No se ha seleccionado nimgún archivo
+            <div>
+                <input type="file" name="Imagen">
             </div>
-           
+
+            <div>
+                <label for="file">Curriculum Vitae Formato PDF</label>
+            </div>
+            <div>
+                <input type="file" name="PDF">
+            </div>
+            <div>
+                <label for="name"> Redes Socilaes Profesionales: </label>
+                <input type="url" name="Redes" placeholder="Indique aquí sus redes" required />
+            </div>
+            <div>
+                <label for="select"> Instituto*: </label>
+                <select name="Institutos" required>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div>
+                <label for="select"> Ciclo Formativo*: </label>
+                <select name="Ciclos" required>
+                    <option value="DAM">DAM</option>
+                    <option value="DAW">DAW</option>
+                    <option value="ASIR">ASIR</option>
+                </select>
+            </div>
+            <div>
+                <label for="locate"> Provincia del instituto al que pertenece*: </label>
+                <input type="text" name="Provincia" placeholder="Indique la Provincia del centro" required />
+            </div>
+            <div>
+                <label for="text"> Descripción perosnal y profesional: </label>
+                <textarea name="Descripción"> </textarea>
+            </div>
+
+            <div>
+                <label for="text"> Habilidades y Competemcias: </label>
+                <textarea name="Habilidades"> </textarea>
+            </div>
+
+            <div>
+                <label for="text"> Idiomas y niveles: </label>
+                <textarea name="Idioma"> </textarea>
+            </div>
+
+            <div>
+                <label for="text"> Experiencia previa: </label>
+                <textarea name="Experiencia"> </textarea>
+            </div>
+
+            <div>
+                <label for="text"> Certificaciones o cursos realizados: </label>
+                <textarea name="Certificaciones"> </textarea>
+            </div>
+
+            <div>
+                <label for="name"> Proyectos Personales: </label>
+                <input type="url" name="Proyectos" placeholder="Agrege los enlaces de Proyectos si posee" />
+            </div>
+
+            <div>
+                <label for="file">VideoCV formato Elevator Pitch </label>
+            </div>
+            <div>
+                <input type="file" name="Video">
+            </div>
+
+            <div>
+                <label for="file"> Carta de presentación</label>
+            </div>
+            <div>
+                <input type="file" name="Carta">
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar Formulario" id="Enviar">
+
+                <input type="reset" value="Borrar Formulario" id="Borrar">
+            </div>
+
         </form>
     </fieldset>
 
 </body>
+
 </html>
