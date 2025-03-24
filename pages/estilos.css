@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fde2e4;
+    color: #5a3d5c;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffb3c6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navegación */
+nav {
+    background-color: #ff85a2;
+    padding: 10px;
+    text-align: center;
+}
+
+.navegacion {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menus {
+    margin: 0 15px;
+}
+
+.menus a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #d46a8c;
+    transition: background 0.3s;
+}
+
+.menus a:hover {
+    background-color: #b23a57;
+}
+
+/* Formulario */
+fieldset {
+    background-color: white;
+    border: 2px solid #ff85a2;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b23a57;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ff85a2;
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #ff85a2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+
+
+}
+
+input[type="submit"]:hover {
+    background-color: #b23a57;
+}
+
+input[type="reset"]:hover {
+    background-color: #d46a8c;
+}
