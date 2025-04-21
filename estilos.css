@@ -37,7 +37,25 @@
   top: 0;
   z-index: 999;
   }
-  
+  .logo-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo-contenedor img {
+    height: 60px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.logo-contenedor h1 {
+  font-family:'Quicksand', 'Segoe UI', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
   header::before {
     content: "";
     position: absolute;
