@@ -9,7 +9,7 @@
     --gradient: linear-gradient(135deg, #4361ee 0%, #3a0ca3 50%, #f72585 100%);
   }
   
-  /* Reset mejorado */
+
   * {
     margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@
     flex-direction: column;
   }
   
-  /* Encabezado con personalidad */
+
   header {
     background: var(--gradient);
   color: white;
@@ -74,8 +74,14 @@
     position: relative;
     z-index: 1;
   }
-  
-  /* Navegación dinámica */
+  header a{
+    color: white;
+    text-decoration: none;
+  }
+  header a:hover{
+    color:#f72585;
+  }
+
   nav {
     background-color: white;
     padding: 1rem 0;
@@ -272,7 +278,7 @@
     background: var(--gradient);
   }
   
-  /* Efectos especiales */
+
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -282,7 +288,7 @@
     animation: float 3s ease-in-out infinite;
   }
   
-  /* Responsive design */
+
   @media (max-width: 768px) {
     header h1 {
       font-size: 2rem;
@@ -311,11 +317,10 @@
     }
   }
   
-  /* Mejoras visuales */
+
   ::selection {
     background: var(--accent);
     color: white;
   }
   
-  /* Iconos (necesitarías Font Awesome) */
-  /* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> */
+
