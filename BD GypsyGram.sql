@@ -62,7 +62,7 @@ descripcion TEXT NOT NULL,
 url_pagina TEXT NOT NULL,
 telefono NVARCHAR(50) NOT NULL,
 contrasenia NVARCHAR(100) NOT NULL,
-correo NVARCHAR(100) NOT NULL,
+email NVARCHAR(100) NOT NULL,
 localizacion NVARCHAR (200) NOT NULL,
 CONSTRAINT pk_codigo_ies_insituto PRIMARY KEY(codigo_ies));
 
