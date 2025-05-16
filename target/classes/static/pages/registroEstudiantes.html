@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="icon" type="image/png" href="../Images/favicon.png">    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>GypsiGram</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-contenedor">
+        <img src="../Images/favicon.png" alt="logo">
+        <h1><a href="../index.html">Gypsi Gram</a></h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navegacion">
+            <div class="menu">
+                <li class="menus"><a href="registroInstituto.html"> <img src="../Images/institucion.png" alt="instituto"></a></li>
+                <li class="menus"><a href="registroEmpresas.html"> <img src="../Images/contrato.png" alt="Empresa"></a></li>
+            </div>
+        </ul>
+    </nav>
+
+
+    <fieldset>
+        <legend>Registro Estudiantes</legend>
+        <form action="" method="post">
+            <div>
+                <label for="name"> Nombre completo*: </label>
+                <input type="text" name="Nombre" placeholder="Escribe el nombre con apellidos aqui" required />
+            </div>
+
+            <div>
+                <label for="file"> Imagen de perfil</label>
+            </div>
+            <div>
+                <input type="file" name="Imagen">
+            </div>
+
+            <div>
+                <label for="file">Curriculum Vitae Formato PDF</label>
+            </div>
+            <div>
+                <input type="file" name="PDF">
+            </div>
+            <div>
+                <label for="name"> Redes Socilaes Profesionales: </label>
+                <input type="url" name="Redes" placeholder="Indique aquí sus redes" required />
+            </div>
+            <div>
+                <label for="select"> Instituto*: </label>
+                <select name="Institutos" required>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div>
+                <label for="select"> Ciclo Formativo*: </label>
+                <select name="Ciclos" required>
+                    <option value="DAM">DAM</option>
+                    <option value="DAW">DAW</option>
+                    <option value="ASIR">ASIR</option>
+                    <option value="ASMR">ASMR</option>
+                    <option value="IA y Big Data">IA y Big Data</option>
+                    <option value="Ciberseguridad">Ciberseguridad</option>
+                    <option value="Desarrollo de Videojuegos">Desarrollo de Videojuegos</option>
+                </select>
+            </div>
+            <div>
+                <label for="locate"> Provincia del instituto al que pertenece*: </label>
+                <input type="text" name="Provincia" placeholder="Indique la Provincia del centro" required />
+            </div>
+            <div>
+                <label for="text"> Descripción perosnal y profesional: </label>
+                <textarea name="Descripción"> </textarea>
+            </div>
+
+            <div>
+                <label for="text"> Habilidades y Competemcias: </label>
+                <textarea name="Habilidades"> </textarea>
+            </div>
+
+            <div>
+                <label for="text"> Idiomas y niveles: </label>
+                <textarea name="Idioma"> </textarea>
+            </div>
+
+            <div>
+                <label for="text"> Experiencia previa: </label>
+                <textarea name="Experiencia"> </textarea>
+            </div>
+
+            <div>
+                <label for="text"> Certificaciones o cursos realizados: </label>
+                <textarea name="Certificaciones"> </textarea>
+            </div>
+
+            <div>
+                <label for="name"> Proyectos Personales: </label>
+                <input type="url" name="Proyectos" placeholder="Agrege los enlaces de Proyectos si posee" />
+            </div>
+
+            <div>
+                <label for="file">VideoCV formato Elevator Pitch </label>
+            </div>
+            <div>
+                <input type="file" name="Video">
+            </div>
+
+            <div>
+                <label for="file"> Carta de presentación</label>
+            </div>
+            <div>
+                <input type="file" name="Carta">
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar Formulario" id="Enviar">
+
+                <input type="reset" value="Borrar Formulario" id="Borrar">
+            </div>
+
+        </form>
+    </fieldset>
+    <footer>&copy;2025 - Todos los Derechos Reservados Por La Empresa GypsiGram</footer>
+</body>
+
+</html>
