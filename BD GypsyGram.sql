@@ -1,6 +1,3 @@
-
---CREAR TABLAS QUE ESTAN EN VERDE EN LA NORMALIZACIÓN
--- Y ELIMINAR LOS DATOS ROJOS
 CREATE DATABASE GypsiGram
 USE GypsiGram
 
@@ -25,8 +22,6 @@ nombre NVARCHAR(50) NOT NULL,
 apellido1 NVARCHAR(50) NOT NULL,
 apellido2 NVARCHAR(50) NOT NULL,
 carta_presentacion NVARCHAR(500) NOT NULL,
-certificaciones NVARCHAR(1000),
-experiencias NVARCHAR(1000),
 prov_instituto NVARCHAR(50) NOT NULL,
 descripcion NVARCHAR(1000),
 URL_linkedin NVARCHAR(1000),
@@ -34,7 +29,6 @@ URL_github NVARCHAR(1000),
 email NVARCHAR(100)NOT NULL,
 img_perfil NVARCHAR(1000),
 curriculum NVARCHAR(1000) NOT NULL,
-proyecto_personales NVARCHAR(1000),
 video_cv NVARCHAR(1000) NOT NULL,
 CONSTRAINT pk_DNI_estudiante PRIMARY KEY (DNI));
 
@@ -45,14 +39,15 @@ CONSTRAINT pk_codigo_certificacion PRIMARY KEY (codigo_certificacion));
 
 CREATE TABLE experiencia(
 codigo_experiencia INT IDENTITY(1,1),
-nombre NVARCHAR(300),
-descripcion NVARCHAR(1000)
+puesto NVARCHAR(100),
+nombre_empresa NVARCHAR(100)
 CONSTRAINT pk_codigo_experiencia PRIMARY KEY (codigo_experiencia));
 
 CREATE TABLE proyecto_personal (
 codigo_proyecto INT IDENTITY(1,1),
 nombre NVARCHAR(300),
-URL_proyecto NVARCHAR(1000)
+URL_proyecto NVARCHAR(1000),
+fecha_realizacion DATE
 CONSTRAINT pk_codigo_proyecto PRIMARY KEY (codigo_proyecto));
 
 CREATE TABLE ciclo(
@@ -108,6 +103,9 @@ CONSTRAINT fk_codigo_proyecto_estudiante FOREIGN KEY (codigo_proyecto) REFERENCE
 CREATE TABLE experiencia_estudiante(
 	DNI NVARCHAR(20),
 	codigo_experiencia INT,
+	descripcion NVARCHAR(200),
+	fecha_inicio DATE,
+	fecha_fin DATE
 	CONSTRAINT pk_experiencia_estudiante PRIMARY KEY (DNI,codigo_experiencia),
 	CONSTRAINT fk_experiencia_estudiante_dni FOREIGN KEY (DNI) REFERENCES estudiante(DNI),
 	CONSTRAINT fk_experiencia_estudiante_codigo_experiencia FOREIGN KEY (codigo_experiencia) REFERENCES experiencia(codigo_experiencia)
@@ -116,6 +114,7 @@ CREATE TABLE experiencia_estudiante(
 CREATE TABLE certificacion_estudiante (
 	DNI NVARCHAR(20),
 	codigo_certificacion INT,
+	fecha DATE
 	CONSTRAINT pk_certificacion_estudiante PRIMARY KEY (DNI, codigo_certificacion),
 	CONSTRAINT fk_certificacion_estudiante_dni FOREIGN KEY (DNI) REFERENCES estudiante(DNI),
 	CONSTRAINT fk_certificacion_estudiante_codigo_certificacion FOREIGN KEY (codigo_certificacion) REFERENCES certificacion(codigo_certificacion)
