@@ -331,3 +331,33 @@
   }
   
 
+  ul{
+    list-style: none;
+  }
+
+  .foto_vista{
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 50px ;
+  }
+
+  .contenedor_alumno{
+    border: 1px solid rgb(246, 246, 234);
+    border-radius: 25px;
+    max-width: 400px;
+    padding: 10px;
+    background-color: rgb(246, 246, 234);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    margin-right: 50px;
+
+  }
+
+  .Nombre_vista{
+    margin-bottom: 20px;
+  }
+
+  .main_vista{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
