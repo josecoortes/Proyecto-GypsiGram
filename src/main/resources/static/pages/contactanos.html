@@ -26,7 +26,55 @@
     </nav>
 
     <main>
-        
+        <div class="Formulario">
+				<fieldset>
+					<legend>Contacta con los Nosotros</legend>
+					<form action="procesarincidencia.php" method="post">
+	
+						<div class="dato">
+						<label for="name">Nombre: * </label>
+						<input type="text" name="nombre" placeholder="Escribe tu nombre aquí"  required/>
+						</div>
+	
+						<div class="dato">
+						<label for="email">Correo Electrónico *:</label>
+						<input type="email" name="correo" placeholder="Escribe tu correo aquí"  required/>
+						</div>
+
+						<div class="dato">
+						<label for="text" >Mensaje a enviar *:</label> 
+						<textarea class="Mensaje"  name="Descripción" required></textarea>
+						</div>
+	
+						<div class="boton">
+						<input type="submit" value="Enviar incidencia" id="Enviar" class="boton-contacta"/>
+						<input type="reset" value="Borrar Formulario" id="borra"  class="boton-contacta"/>
+						</div>
+					</form>
+				</fieldset>
+			</div>
+			<h2 class="conoce">Conoce a los genios que han creado esta página</h2>
+
+			<div class="Nosotros">
+				<div class="miembros">
+					<img src="../Images/jesus.png" alt="jesus" class="fotaca">
+					<p>Jesus Moreno Bernal</p>
+				</div>
+				<div class="miembros">
+					<img src="../Images/nico.png" alt="Nico" class="fotaca">
+					<p>Nicolás Jiménez Gutierrez</p>
+				</div>
+				<div class="miembros">
+					<img src="../Images/joaki.png" alt="Joaquín" class="fotaca">
+					<p>Joaquín Ruiz Jiménez</p>
+				</div>
+
+                <div class="miembros">
+					<img src="../Images/angel.png" alt="Ángel" class="fotaca">
+					<p>Ángel Yañez Solano</p>
+				</div>
+
+			</div>
     </main>
 
     <footer>&copy;2025 - Todos los Derechos Reservados Por La Empresa GypsiGram</footer>
